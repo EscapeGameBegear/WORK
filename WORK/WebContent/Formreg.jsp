@@ -11,7 +11,7 @@
         <h1> Registration Form </h1>
     </div>
     <div class="main">
-        <form action ="ServletLogin" method="POST">
+        <form action ="submit" method="POST">
             <div id="name">
             
                <h2 class="credentials"> Credentials </h2>
