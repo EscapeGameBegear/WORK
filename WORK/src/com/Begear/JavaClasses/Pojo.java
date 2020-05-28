@@ -21,7 +21,6 @@ public class Pojo {
 	@Column(name = "password")
 	private String password;
 	
-	private String Igor;
 	
 	public int getID() {
 		return ID;
