@@ -21,7 +21,7 @@
                 <label class="email"> Email </label>
                 <input class="email" type="email" name="email" placeholder="email" />
               
-                <label class="password"> Password </label>
+                <label class="passlabel"> Password </label>
                 <input class="password" type="password" name="PassWord" placeholder="Password" />
 			              
                 <input class="btn" type="submit" value="submit" />

@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "datauser")
+@Table(name = "datautenti")
 public class Pojo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
