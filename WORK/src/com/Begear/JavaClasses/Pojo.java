@@ -21,6 +21,7 @@ public class Pojo {
 	@Column(name = "password")
 	private String password;
 	
+	private String Igor;
 	
 	public int getID() {
 		return ID;
@@ -61,6 +62,7 @@ public class Pojo {
 	public String toString() {
 		return "Autorizzazione [ID=" + ID + ", username=" + username + ", email=" + email + ", password=" + password
 				+ "]";
+		
 	}
 	
 }
