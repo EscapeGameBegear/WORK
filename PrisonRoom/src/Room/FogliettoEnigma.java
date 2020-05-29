@@ -96,10 +96,11 @@ public class FogliettoEnigma {
 				
 				String ora = Testo.getText().toString();
 				OrologioDaTaschino orario = new OrologioDaTaschino();
+				
 				if (ora.equals("18:00") || ora.equals("18.00") ) {
 					frame.setVisible(false);
 				} else {
-					Submit.setBackground(new Color(255, 0, 0));
+				Submit.setBackground(new Color(255, 0, 0));
 				}
 			}
 		});

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../immaginiHtml/principale.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+div {
+  flex-direction: column;
+}
+.bottoni {
+  width: 40%;
+  float: right;
+  padding-top: 91px;
+}
+
+input {
+  width: 60px;
+  padding: 5px;
+}
+
+a {
+  color: #baa561;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
