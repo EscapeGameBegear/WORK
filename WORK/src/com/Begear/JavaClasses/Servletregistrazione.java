@@ -20,7 +20,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 public class Servletregistrazione extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-}
+		 resp.sendRedirect(req.getContextPath() + "/");
+	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		HttpSession sessioneHttpSession = req.getSession();
