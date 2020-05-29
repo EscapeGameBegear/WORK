@@ -197,7 +197,7 @@ public class Stanza {
 				
 				//Bed
 				ZoomBed.setBackground(new Color(105, 105, 105));
-				ZoomBed.setBounds(465, 457, 19, 18);
+				ZoomBed.setBounds(458, 457, 19, 18);
 				frame.getContentPane().add(ZoomBed);
 				
 				//bed2

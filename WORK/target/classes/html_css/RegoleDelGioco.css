@@ -1,0 +1,25 @@
+h1, h3 {
+	text-align: center;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
+/*  font-size: 55px; */
+  padding-top: 60px;
+  padding-bottom: 20px;
+color: #d1d1d1;
+}
+article{
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+}
+p{
+	padding: 10px 70px;
+}
+body{
+	
+	background-image: url(../immaginiHtml/escape-room-magenta-key.jpg);
+	background-size: cover;
+	
+	
+}

@@ -102,6 +102,7 @@ public class FogliettoEnigma {
 				} else {
 				Submit.setBackground(new Color(255, 0, 0));
 				}
+				
 			}
 		});
 		
