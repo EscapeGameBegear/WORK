@@ -16,13 +16,13 @@
             
                <h2 class="credentials"> Credentials </h2>
                 <label class="userlabel"> Username </label>
-                <input class="username" type="text" name="UserName" placeholder="Username" /> 
+                <input class="username" type="text" name="username" placeholder="username" /> 
 
                 <label class="email"> Email </label>
                 <input class="email" type="email" name="email" placeholder="email" />
               
                 <label class="passlabel"> Password </label>
-                <input class="password" type="password" name="PassWord" placeholder="Password" />
+                <input class="password" type="password" name="password" placeholder="password" />
 			              
                 <input class="btn" type="submit" value="submit" />
 
