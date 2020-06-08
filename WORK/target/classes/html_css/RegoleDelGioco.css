@@ -23,3 +23,12 @@ body{
 	
 	
 }
+img {
+	width: 50px;
+}
+.button{
+	background-image: url("../immaginiHtml/freccia.jpg");
+	width: 55px;
+	height: 40px;
+	background-size: cover;
+}

@@ -99,16 +99,6 @@ public class EnigmaDelQuindici extends JPanel {
 
 			gameOver= true;
 
-		/*	JButton finish = new JButton("click");
-			finish.setBounds(680, 228, 53, 53);
-		//	finish.getContentPane().add(finish);
-			finish.setFont(new Font("Tahoma", Font.PLAIN, 9));
-			
-			finish.setBackground(new Color(204, 204, 153));
-			finish.setBounds(176, 293, 57, 17); 
-			*/
-			
-			
 			
 	//impostare metodo per click del mouse
 			addMouseListener(new MouseAdapter() {

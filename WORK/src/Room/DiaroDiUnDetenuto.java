@@ -14,10 +14,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+
 import java.awt.CardLayout;
 import javax.swing.JLayeredPane;
 import java.awt.Color;
-import javax.swing.JTextField;
+
 
 
 
@@ -26,6 +28,7 @@ public class DiaroDiUnDetenuto extends Stanza{
 
 	JFrame frame;
 	private JTextField txt;
+	boolean result= false;
 
 	/**
 	 * Launch the application.
@@ -119,17 +122,8 @@ public class DiaroDiUnDetenuto extends Stanza{
 					submit.setBackground(new Color(154, 205, 50));
 				//	System.exit(0);
 					frame.setVisible(false);
+					result= true;
 					System.out.println("corretto");
-					
-					//		DiaroDiUnDetenuto.class.getEnclosingClass();
-			/*		submit.addMouseListener(new MouseAdapter() {
-						@Override
-						public void mousePressed(MouseEvent e) {
-					//		DiaroDiUnDetenuto.class.getEnclosingClass();
-					//		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);	
-						}
-					});*/
-					
 				} else {
 					submit.setBackground(Color.RED);
 					System.out.println("non corretto");		
@@ -251,4 +245,7 @@ public class DiaroDiUnDetenuto extends Stanza{
 	
 	
 	}
+
+
+
 }

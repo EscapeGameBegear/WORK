@@ -6,6 +6,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JButton;
+
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.Color;
@@ -17,9 +19,7 @@ public class Stanza {
 	//public static extends(); 
 	
 	//bottoni per enigmi
-//	JButton orologio = new JButton("orologio");
-//	JButton diario = new JButton("diario");
-//	JButton EnigmaDel15 = new JButton("gioco15");
+
 	JLabel diario = new JLabel();
 	JLabel orologio = new JLabel("");
 	JLabel EnigmaDel15 = new JLabel("");
@@ -54,6 +54,13 @@ public class Stanza {
 				}
 			}
 		});
+		
+		DiaroDiUnDetenuto diario = new DiaroDiUnDetenuto();
+	//	diario.
+	/*	if (diario.actionPerformed().result == true) {
+			System.out.println("OK!!");
+		}*/
+		
 	}
 
 	/**
@@ -210,7 +217,7 @@ public class Stanza {
 				ZoomFront.setBounds(596, 208, 45, 9);
 				frame.getContentPane().add(ZoomFront);
 				
-				
+			
 				
 				
 				//Aprire gli enigmi
@@ -251,8 +258,8 @@ public class Stanza {
 					
 				});	
 
-				
-				
+				//controllo per uscire dalla stanza 
+			
 				
 			}
 }

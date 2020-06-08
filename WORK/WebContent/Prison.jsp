@@ -1,12 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>EscapeRoom_Prison</title>
-    <link rel="stylesheet" type="text/css" href="Prison.css" />
-    <meta name="viewport" content="width=device-width" />
-  </head>
-
-  <body>
-    <header>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
       <h1>
         Prison Break
       </h1>
@@ -40,5 +41,6 @@
       <p>Lavoro realizzato da Igor, Elisa e Marco </p>
 			<a href="../html_css/Principale.html"><button class="button" ></button></a></button>
     </footer>
-  </body>
+
+</body>
 </html>
