@@ -4,25 +4,35 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+  <title> Admin Form </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="Formreg.css">
 </head>
 <body>
-<div class="regform">
+	<div class="regform">
         <h1> Registration Form </h1>
     </div>
+    
     <div class="main">
         <form action ="submit" method="POST">
             <div id="name">
             
-               <h2 class="credentials"> Credentials </h2>
-                <label class="userlabel"> Username </label>
-                <input class="username" type="text" name="username" placeholder="username" /> 
-
-                <label class="email"> Email </label>
-                <input class="email" type="email" name="email" placeholder="email" />
-              
-                <label class="passlabel"> Password </label>
-                <input class="password" type="password" name="password" placeholder="password" />
+                <div class="div1"> 
+	                <label class="userlabel"> Username </label>
+	                <input class="username" type="text" name="username" placeholder="username" /> 
+                </div>
+                
+				<div class="div2">	
+	                <label class="emaillabel"> Email </label>
+	                <input class="email" type="email" name="email" placeholder="email" />
+              	</div>
+              	
+              	<div class="div3">	
+	                <label class="passlabel"> Password </label>
+	                <input class="password" type="password" name="password" placeholder="password" />
+			    </div>   
 			              
                 <input class="btn" type="submit" value="submit" />
 
@@ -36,15 +46,19 @@
                 </div>
 
                 <div class="language">
-                    <select>
+                    <select name="form" onchange="location =this.value;">
                         <option> Select language </option>
-                        <option value="English"> English </option>
-                        <option value="Italiano"> Italiano </option>
-                        <option value="Francais"> Francais </option>
+                        <option id="eng" value="Formreg.jsp" > English </option>
+                        <option id="it" value="FormregIT.jsp" > Italiano </option>
+                        <option id="fr" value="FormregFR.jsp" > Francais </option>
                     </select>
-                </div>
+                </div> 
             </div>
         </form>
     </div>
+    
+    <script> 
+    
+    </script>
 </body>
 </html>
