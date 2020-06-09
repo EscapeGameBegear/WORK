@@ -16,6 +16,7 @@ public class FogliettoEnigma {
 
 	private JFrame frame;
 	private JTextField Testo;
+	static boolean resultOr= false;
 
 	/**
 	 * Launch the application.
@@ -99,6 +100,7 @@ public class FogliettoEnigma {
 				
 				if (ora.equals("18:00") || ora.equals("18.00") ) {
 					frame.setVisible(false);
+					resultOr= true;
 				} else {
 				Submit.setBackground(new Color(255, 0, 0));
 				}

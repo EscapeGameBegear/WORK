@@ -17,12 +17,13 @@ public class Stanza {
 	//public static extends(); 
 	
 	//bottoni per enigmi
-//	JButton orologio = new JButton("orologio");
-//	JButton diario = new JButton("diario");
-//	JButton EnigmaDel15 = new JButton("gioco15");
+	JButton EXIT = new JButton("EXIT");
+	
 	JLabel diario = new JLabel();
 	JLabel orologio = new JLabel("");
 	JLabel EnigmaDel15 = new JLabel("");
+	
+	
 	
 	//immagini visuali
 	private final JLabel Front = new JLabel();
@@ -54,6 +55,9 @@ public class Stanza {
 				}
 			}
 		});
+		
+		
+		
 	}
 
 	/**
@@ -101,6 +105,7 @@ public class Stanza {
 				ZoomRetro.setVisible(false);
 				ZoomBed2.setVisible(false);
 				ZoomFront.setVisible(false);
+				EXIT.setVisible(false);
 				
 				//Desk
 				Desk.setIcon(new ImageIcon(Stanza.class.getResource("/immaginiStanza/scrivania.jpg")));
@@ -127,14 +132,21 @@ public class Stanza {
 				frame.getContentPane().add(Retro);
 				Retro.setVisible(false);
 				
+				EXIT.setForeground(Color.WHITE);
+				EXIT.setBounds(553, 174, 74, 23);
+				EXIT.setBackground(Color.RED);
+				frame.getContentPane().add(EXIT);
+				
 				ZoomRetro.addMouseListener(new MouseAdapter() {
 					@Override
 					public void mousePressed(MouseEvent e) {
+						EXIT.setVisible(true);
 						ZoomFront.setVisible(true);
 						Retro.setVisible(true);
 						ZoomRetro.setVisible(false);
 						orologio.setVisible(false);
 						EnigmaDel15.setVisible(true);
+						
 						
 					}
 				});
@@ -197,7 +209,7 @@ public class Stanza {
 				
 				//Bed
 				ZoomBed.setBackground(new Color(105, 105, 105));
-				ZoomBed.setBounds(458, 457, 19, 18);
+				ZoomBed.setBounds(465, 457, 19, 18);
 				frame.getContentPane().add(ZoomBed);
 				
 				//bed2
@@ -210,7 +222,7 @@ public class Stanza {
 				ZoomFront.setBounds(596, 208, 45, 9);
 				frame.getContentPane().add(ZoomFront);
 				
-				
+			
 				
 				
 				//Aprire gli enigmi
@@ -241,6 +253,9 @@ public class Stanza {
 				Front.setBounds(0, 0, 1204, 652);
 				
 				frame.getContentPane().add(Front);
+				
+			
+				
 			
 				orologio.addMouseListener(new MouseAdapter() {
 						
@@ -251,8 +266,23 @@ public class Stanza {
 					
 				});	
 
+				//controllo per uscire dalla stanza 
+			
+		/*		DiaroDiUnDetenuto diario = new DiaroDiUnDetenuto();
+				boolean controllo = DiaroDiUnDetenuto.result;
 				
 				
-				
+				EXIT.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseExited(MouseEvent e) {
+						if (controllo == true) {
+							System.out.println("OK!!");
+						} else {
+							System.out.println("FAIL");
+						}
+					}
+				}); 
+				*/
+			
 			}
 }

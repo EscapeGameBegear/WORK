@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="Prison.css" />
 </head>
 <body>
 <header>
@@ -39,8 +40,13 @@
     </main>
     <footer>
       <p>Lavoro realizzato da Igor, Elisa e Marco </p>
-			<a href="../html_css/Principale.html"><button class="button" ></button></a></button>
+	<a href="../html_css/Principale.html"><button class="button" ></button></a></button>
     </footer>
 
 </body>
+<%
+/* public void button.sendRedirect (Room/Stanza.java);
+    String redirectURL = "../Room/Stanza.java";
+    response.sendRedirect(redirectURL); */
+%>
 </html>

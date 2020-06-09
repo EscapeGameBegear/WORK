@@ -16,6 +16,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
+
 import java.awt.CardLayout;
 import javax.swing.JLayeredPane;
 import java.awt.Color;
@@ -28,7 +29,7 @@ public class DiaroDiUnDetenuto extends Stanza{
 
 	JFrame frame;
 	private JTextField txt;
-	boolean result= false;
+	static boolean result= false;
 
 	/**
 	 * Launch the application.
@@ -120,13 +121,12 @@ public class DiaroDiUnDetenuto extends Stanza{
 				
 				if (input.equals("ciao")) {
 					submit.setBackground(new Color(154, 205, 50));
-				//	System.exit(0);
 					frame.setVisible(false);
-					result= true;
-					System.out.println("corretto");
+					DiaroDiUnDetenuto.result= true;
+			//		System.out.println("corretto");
 				} else {
 					submit.setBackground(Color.RED);
-					System.out.println("non corretto");		
+			//		System.out.println("non corretto");		
 				}
 			}
 		});

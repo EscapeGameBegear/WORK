@@ -76,7 +76,9 @@ public class EnigmaDelQuindici extends JPanel {
 		//true se il gioco finisce, altrimenti false. 
 		private boolean gameOver;
 
-
+		static boolean resultQui= false;
+		
+		
 		//metodo per calcolare grandezza, dimensione e margine. 
 
 		public EnigmaDelQuindici(int Mis, int Dim,int Margin) {
@@ -151,6 +153,7 @@ public class EnigmaDelQuindici extends JPanel {
 
 								//se il gioco è RISOLTO
 								gameOver = isSolved();
+								
 					}
 
 					repaint();			//muove i tasti al click
@@ -160,6 +163,7 @@ public class EnigmaDelQuindici extends JPanel {
 			});
 
 			newGame();
+			resultQui= true;
 		}
 
 		
@@ -309,7 +313,7 @@ public class EnigmaDelQuindici extends JPanel {
 				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				frame.setTitle("Enigma del 15");
 				frame.setResizable(false);
-				frame.add(new EnigmaDelQuindici(2, 550, 30), BorderLayout.CENTER);
+				frame.add(new EnigmaDelQuindici(4, 550, 30), BorderLayout.CENTER);
 				frame.pack();
 
 				//posizionarla al cnetro dello schermo

@@ -11,9 +11,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+
 public class OrologioDaTaschino extends Stanza{
 
 	private JFrame frame;
+	
 
 	/**
 	 * Launch the application.
