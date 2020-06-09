@@ -119,7 +119,7 @@ public class DiaroDiUnDetenuto extends Stanza{
 				
 				System.out.println(input);
 				
-				if (input.equals("ciao")) {
+				if (input.equals("attualmente sorrido lavoro a capo dell'area educativa gli operatori mi hanno guardato cambiare vita so essere resposabile la mia vita non voglio sprecarla")) {
 					submit.setBackground(new Color(154, 205, 50));
 					frame.setVisible(false);
 					DiaroDiUnDetenuto.result= true;

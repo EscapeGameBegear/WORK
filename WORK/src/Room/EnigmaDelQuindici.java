@@ -29,7 +29,7 @@ public class EnigmaDelQuindici extends JPanel {
 	
 
 
-	/* Per creare il gioco del quindici mi servirà: variabili per misura tass, mis griglia, colore, etc... metodi per: 
+	/* Per creare il gioco del quindici mi servirÃ : variabili per misura tass, mis griglia, colore, etc... metodi per: 
 	 * - calcolare la grandezza della griglia e dei tasselli
 	 * - mescolare i tasselli di nuovo
 	 * - restart dopo un game over
@@ -70,7 +70,7 @@ public class EnigmaDelQuindici extends JPanel {
 
 		//memorizzare le tessere in una array (int)
 		private int [] tasselli;
-//		private String [] tasselli= {"la", "tua", "fine", "è", "vicina"};
+//		private String [] tasselli= {"la", "tua", "fine", "Ã¨", "vicina"};
 		
 
 		//true se il gioco finisce, altrimenti false. 
@@ -151,7 +151,7 @@ public class EnigmaDelQuindici extends JPanel {
 									tasselli[PosEmptyTass] = 0;
 								}
 
-								//se il gioco è RISOLTO
+								//se il gioco Ã¨ RISOLTO
 								gameOver = isSolved();
 								
 					}
@@ -172,7 +172,7 @@ public class EnigmaDelQuindici extends JPanel {
 				reset(); 	//resettare gioco
 				shuffle();	//mescolare tasselli
 
-			} while (!isSalvable());	//finchè non sarà salvata
+			} while (!isSalvable());	//finchÃ¨ non sarÃ  salvata
 
 			gameOver= false;
 		}
@@ -188,7 +188,7 @@ public class EnigmaDelQuindici extends JPanel {
 
 		private void shuffle() {
 
-			int n= NumTass;			//non comprendere il tassello vuoto perchè deve rimanere per ultimo
+			int n= NumTass;			//non comprendere il tassello vuoto perchÃ¨ deve rimanere per ultimo
 
 			while (n > 1) {
 				int r = RANDOM.nextInt(n--);
@@ -200,10 +200,10 @@ public class EnigmaDelQuindici extends JPanel {
 
 		}
 
-		//solo metà ordinamento del puzzle sarà salvabile. 
-		//ogni volta che un tassello sarà preceduto da una tassello con un valore più alto, 
-		//verrà eseguita un'inversione. con il tassello vuoto in ultima posizione,
-		//il numero di inversione deve essere pari affinché il puzzle sia salvabile
+		//solo metÃ  ordinamento del puzzle sarÃ  salvabile. 
+		//ogni volta che un tassello sarÃ  preceduto da una tassello con un valore piÃ¹ alto, 
+		//verrÃ  eseguita un'inversione. con il tassello vuoto in ultima posizione,
+		//il numero di inversione deve essere pari affinchÃ© il puzzle sia salvabile
 
 		private boolean isSalvable() {
 			int Invers = 0;
@@ -220,7 +220,7 @@ public class EnigmaDelQuindici extends JPanel {
 
 
 		private boolean isSolved() {
-			if (tasselli[tasselli.length -1] != 0)		//se il tassello vuoto non è ultimo, non salvare
+			if (tasselli[tasselli.length -1] != 0)		//se il tassello vuoto non Ã¨ ultimo, non salvare
 				return false;
 
 			for (int i = NumTass -1; i >= 0; i--) {
@@ -251,7 +251,7 @@ public class EnigmaDelQuindici extends JPanel {
 				if (tasselli[i] == 0) {
 					if (gameOver) {
 						g.setColor(COLOREGRIGLIA);
-						drawCenteredString(g, "Gira il gioco" , x, y);
+						drawCenteredString(g, "âœ”" , x, y);
 					}
 				//	Risultato result = new Risultato();
 					continue;
@@ -313,7 +313,7 @@ public class EnigmaDelQuindici extends JPanel {
 				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				frame.setTitle("Enigma del 15");
 				frame.setResizable(false);
-				frame.add(new EnigmaDelQuindici(4, 550, 30), BorderLayout.CENTER);
+				frame.add(new EnigmaDelQuindici(2, 550, 30), BorderLayout.CENTER);
 				frame.pack();
 
 				//posizionarla al cnetro dello schermo

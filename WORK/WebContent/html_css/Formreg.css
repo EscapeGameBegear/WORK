@@ -165,3 +165,10 @@ form {
     margin-top: -30px;
     margin-left: 20px;
 } 
+
+.button{
+	background-image: url("../immaginiHtml/freccia.jpg");
+	width: 55px;
+	height: 40px;
+	background-size: cover;
+}

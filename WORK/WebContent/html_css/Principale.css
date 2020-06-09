@@ -7,6 +7,17 @@ body {
   background-size: cover;
   height: 100vh;
 }
+.submit{
+	border: none; 
+	color: #baa561;
+	background: none;
+	font-size: 17px;
+	width: 180px; 
+	
+}
+.submit:hover {
+  text-decoration: underline;
+}
 div {
   flex-direction: column;
 }
@@ -25,6 +36,7 @@ a {
   color: #baa561;
   font-size: 20px;
   text-decoration: none;
+  padding-left: 15px;
 }
 a:hover {
   text-decoration: underline;

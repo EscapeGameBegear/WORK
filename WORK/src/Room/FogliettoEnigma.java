@@ -53,7 +53,7 @@ public class FogliettoEnigma {
 		frame.setTitle("Che ore sono?");
 		
 		JLabel FoglioEnigma = new JLabel();
-		JLabel Penna = new JLabel("penna");
+		JLabel Penna = new JLabel("");
 		JButton Submit = new JButton();
 		Submit.setText("✔");
 		Testo = new JTextField();
@@ -62,8 +62,8 @@ public class FogliettoEnigma {
 		Submit.setVisible(false);
 		Testo.setVisible(false);
 		
-		Penna.setIcon(null);
-		Penna.setBounds(488, 463, 99, 47);
+		Penna.setIcon(new ImageIcon(FogliettoEnigma.class.getResource("/imageEnigmi/penna.png")));
+		Penna.setBounds(488, 463, 100, 70);
 		frame.getContentPane().add(Penna);
 		
 		Penna.addMouseListener(new MouseAdapter() {

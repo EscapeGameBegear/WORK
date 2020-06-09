@@ -12,6 +12,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.Color;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
+import java.awt.Font;
 
 public class Stanza {
 
@@ -21,7 +23,8 @@ public class Stanza {
 
 	//bottoni per enigmi
 	JButton EXIT = new JButton("EXIT");
-
+	private JTextField SCAPPA;
+	
 	JLabel diario = new JLabel();
 	JLabel orologio = new JLabel("");
 	JLabel EnigmaDel15 = new JLabel("");
@@ -39,6 +42,7 @@ public class Stanza {
 	JButton ZoomRetro = new JButton("");
 	JButton ZoomBed = new JButton();
 	JButton ZoomBed2 = new JButton("");
+	
 
 
 
@@ -113,6 +117,10 @@ public class Stanza {
 		ZoomRetro.setVisible(false);
 		ZoomBed2.setVisible(false);
 		ZoomFront.setVisible(false);
+		
+		//bottone per uscire dalla stanza
+		SCAPPA = new JTextField();
+		SCAPPA.setBackground(Color.DARK_GRAY);
 		EXIT.setVisible(false);
 
 		//Desk
@@ -145,10 +153,21 @@ public class Stanza {
 		EXIT.setBackground(Color.RED);
 		frame.getContentPane().add(EXIT);
 		
+		SCAPPA.setForeground(Color.RED);
+		SCAPPA.setFont(new Font("Tahoma", Font.PLAIN, 70));
+		SCAPPA.setText("SCAPPA FINCHE' SEI IN TEMPO!");
+		SCAPPA.setBounds(32, 35, 1013, 91);
+		frame.getContentPane().add(SCAPPA);
+		SCAPPA.setColumns(10);
+		SCAPPA.setVisible(false);
+		
 		corridoio.setIcon(new ImageIcon(Stanza.class.getResource("/imageEnigmi/corridoio.jpg")));
 		corridoio.setBounds(0, 0, 1200, 800);
 		frame.getContentPane().add(corridoio);
-		corridoio.setVisible(false);
+		corridoio.setVisible(false);	
+
+		
+		
 
 		ZoomRetro.addMouseListener(new MouseAdapter() {
 			@Override
@@ -284,14 +303,27 @@ public class Stanza {
 			@Override
 			public void mousePressed(MouseEvent e) {
 				if (DiaroDiUnDetenuto.result == true && FogliettoEnigma.resultOr == true && EnigmaDelQuindici.resultQui == true ) {
-					System.out.println("OK!!");
+					
+					SCAPPA.setVisible(true);
 					corridoio.setVisible(true);
+					
+					ZoomDesk.setVisible(false);
+					ZoomBed.setVisible(false);
+					ZoomFront.setVisible(false);
+					ZoomRetro.setVisible(false);
+					ZoomBed2.setVisible(false);
+					
 					Front.setVisible(false);
 					Retro.setVisible(false);
 					Bed.setVisible(false);
-					EXIT.setVisible(false);
-					EnigmaDel15.setVisible(false);
+					Desk.setVisible(false);
 					
+					EXIT.setVisible(false);
+	
+					EnigmaDel15.setVisible(false);
+					diario.setVisible(false);
+					orologio.setVisible(false);
+			
 				} else {
 					System.out.println("FAIL");
 				} 
